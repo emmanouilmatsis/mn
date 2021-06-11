@@ -1,0 +1,126 @@
+:root {
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	/*touch-action: none;*/
+}
+
+html {
+}
+
+body {
+	background: rgba(0,0,0,0.9);
+}
+
+@media screen and (orientation:portrait) {
+	.project {
+		height: 100vh;
+		width: 100vw;
+	}
+
+	.project + .project {
+		margin-top: 20px;
+	}
+
+	.logo {
+		display: block;
+		position: fixed;
+		bottom: 0;
+		width: 100vw;
+		padding: 20px;
+	}
+
+	.address {
+		position: fixed;
+		top: 0px;
+		right: 0px;
+		padding: 20px;
+
+		color: gray;
+		font-size: 12px;
+		font-family: sans-serif;
+		font-style: normal;
+		line-height: 20px;
+		text-align: right;
+	}
+
+	.thumbnail {
+		display: block;
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+		z-index: -1;
+	}
+}
+
+@media screen and (orientation:landscape) and (min-width : 900px) {
+	.project {
+		height: 100vh;
+		width: 100vw;
+	}
+
+	.project + .project {
+		margin-top: 20px;
+	}
+
+	.logo {
+		display: block;
+		height: 100%;
+		width: 100%;
+		max-width: 800px;
+		object-fit: contain;
+		margin: 0 auto;
+	}
+
+	.address {
+		position: fixed;
+		bottom: 0px;
+		right: 0px;
+		padding: 50px;
+
+		color: gray;
+		font-size: 12px;
+		font-family: sans-serif;
+		font-style: normal;
+		line-height: 20px;
+		text-align: right;
+	}
+
+	.thumbnail {
+		display: block;
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+		z-index: -1;
+	}
+}
+
+@media screen and (orientation:landscape) and (max-width : 900px){
+	.project {
+		display: none;
+	}
+
+	.project:first-child {
+		display: block;
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+
+	.logo {
+		display: block;
+		height: 100%;
+		width: 100%;
+		padding: 50px;
+		object-fit: contain;
+	}
+
+	.address {
+		display: none;
+	}
+}
