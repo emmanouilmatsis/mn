@@ -3,11 +3,9 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-
 		<title>mn</title>
 		<meta name="description" content="mn design studio">
-		<meta meta name="viewport" content="width=device-width, user-scalable=no" />
-		<meta name="format-detection" content="telephone=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 
 		<link rel="stylesheet"
 		href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -15,29 +13,38 @@
 	crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<link rel="stylesheet" href="styles.css">
 
-
 		<script defer src="script.js"></script>
 	</head>
 
 	<body>
-		<article class="project">
-			<img class="logo" src="./logo.png" alt="mn"/>
-			<address class="address">
+		<header>
+			<address>
 				Dionisiou Areopagitou 37<br>
 				Acropoli, 117 42<br>
 				Athens<br>
 				+30 210 9233000<br>
 				info@mn.design
 			</address>
-		</article>
-		<article class="project">
-			<img class="thumbnail" src="./26-1.jpg" alt="mn"/>
-		</article>
-		<article class="project">
-			<img class="thumbnail" src="https://picsum.photos/id/1054/1920" alt="mn"/>
-		</article>
-		<article class="project">
-			<img class="thumbnail" src="https://picsum.photos/id/1081/1920" alt="mn"/>
-		</article>
+			<img src="./images/logo.png" alt="mn"/>
+		</header>
+		<main>
+			<ul>
+				<li>
+					<picture>
+						<source srcset="https://via.placeholder.com/1080x1920?text=portrait" media="(orientation:portrait)" alt="portrait"/>
+						<source srcset="https://via.placeholder.com/1920x1080?text=landscape" media="(orientation:landscape)" alt="landscape"/>
+						<img src="./logo"/>
+					</picture>
+				</li>
+				<li>
+					<picture>
+						<source srcset="https://via.placeholder.com/1080x1920?text=portrait" media="(orientation:portrait)" alt="portrait"/>
+						<source srcset="https://via.placeholder.com/1920x1080?text=landscape" media="(orientation:landscape)" alt="landscape"/>
+						<img src="./logo"/>
+					</picture>
+					<img src="https://via.placeholder.com/1920x1080?text=landscape"/>
+				</li>
+			</ul>
+		</main>
 	</body>
 </html>
