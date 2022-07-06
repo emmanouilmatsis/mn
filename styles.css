@@ -89,7 +89,8 @@ main img {
 
 @media screen and (orientation:portrait) {
 	header img {
-		width: 100%;
+		/*width: 100%;*/
+		width: 100px;
 	}
 }
 
