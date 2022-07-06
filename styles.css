@@ -47,6 +47,10 @@ main ul {
 	line-height: 0;
 }
 
+main li:first-child {
+	margin-top: 100vh;
+}
+
 main li + li {
 	margin-top: 1rem;
 }
