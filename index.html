@@ -29,16 +29,28 @@
 			<img src="./images/logo.png" alt="mn"/>
 		</header>
 		<main>
-			<ul>
+			<ul class="vertical">
+				<li></li>
 				<li>
 					<div>
 						<p>01</p>
 					</div>
-					<picture>
-						<source srcset="images/01P.jpg" media="(orientation:portrait)" alt="portrait"/>
-						<source srcset="images/01L.jpg" media="(orientation:landscape)" alt="landscape"/>
-						<img src="./logo"/>
-					</picture>
+					<ul class="horizontal">
+						<li>
+							<picture>
+								<source srcset="images/01P.jpg" media="(orientation:portrait)" alt="portrait"/>
+								<source srcset="images/01L.jpg" media="(orientation:landscape)" alt="landscape"/>
+								<img src="./logo"/>
+							</picture>
+						</li>
+						<li>
+							<picture>
+								<source srcset="images/02P.jpg" media="(orientation:portrait)" alt="portrait"/>
+								<source srcset="images/02L.jpg" media="(orientation:landscape)" alt="landscape"/>
+								<img src="./logo"/>
+							</picture>
+						</li>
+					</ul>
 				</li>
 				<li>
 					<div>
