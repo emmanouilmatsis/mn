@@ -18,7 +18,7 @@ body {
 	background: rgba(0,0,0,0.9);
 }
 
-header {
+.home {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -35,7 +35,7 @@ header {
 	z-index: 1;
 }
 
-header address {
+.address {
 	color: gray;
 	font-size: 12px;
 	font-family: sans-serif;
@@ -44,52 +44,32 @@ header address {
 	text-align: right;
 }
 
-main {
+.logo {
+	width: 100px;
 }
 
-.vertical {
+/*****************/
+
+.projects {
 	height: 100vh;
 	overflow-y: auto;
 	scroll-snap-type: y mandatory;
-	line-height: 0;
-	list-style-type: none;
 }
 
-.vertical > li:first-child {
-	height: 100vh;
-}
-
-.vertical > li + li {
-	margin-top: 1rem;
-}
-
-.vertical > li {
+.project {
 	position: relative;
 	scroll-snap-align: start;
 }
 
-.horizontal {
-	width: 100vw;
-	display: flex;
-	flex-wrap: nowrap;
-	scroll-snap-type: x mandatory;
-	overflow-x: auto;
-	    list-style-type: none;
-
-	-webkit-overflow-scrolling: touch;
+.project + .project {
+	margin-top: 1rem;
 }
 
-.horizontal::-webkit-scrollbar {
-	display: none;
+.project:first-child {
+	height: 100vh;
 }
 
-.horizontal > li {
-	flex: 0 0 auto;
-	scroll-snap-align: start;
-	width: 100vw;
-}
-
-main div {
+.project-info {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -98,7 +78,7 @@ main div {
 	pointer-events: none;
 }
 
-main p {
+.project-counter {
 	position: sticky;
 	top: 0;
 
@@ -112,21 +92,34 @@ main p {
 	text-align: left;
 }
 
-main img {
+.project-images {
+	display: flex;
+	flex-wrap: nowrap;
+	width: 100vw;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	-webkit-overflow-scrolling: touch;
+}
+
+.project-images::-webkit-scrollbar {
+	display: none;
+}
+
+.project-image {
+	flex: 0 0 auto;
+	width: 100vw;
+	margin-right: 1rem;
+	scroll-snap-align: start;
+}
+
+.project-image > img {
 	width: 100%;
 	height: 100vh;
 	object-fit: cover;
 }
 
 @media screen and (orientation:portrait) {
-	header img {
-		/*width: 100%;*/
-		width: 100px;
-	}
 }
 
 @media screen and (orientation:landscape) {
-	header img {
-		width: 100px;
-	}
 }

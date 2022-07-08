@@ -18,51 +18,54 @@
 	</head>
 
 	<body>
-		<header>
-			<address>
+		<header class="home">
+			<address class="address">
 				Dionisiou Areopagitou 37<br>
 				Acropoli, 117 42<br>
 				Athens<br>
 				+30 210 9233000<br>
 				info@mn.design
 			</address>
-			<img src="./images/logo.png" alt="mn"/>
+			<img class="logo" src="./images/logo.png" alt="mn"/>
 		</header>
-		<main>
-			<ul class="vertical">
-				<li></li>
-				<li>
-					<div>
-						<p>01</p>
-					</div>
-					<ul class="horizontal">
-						<li>
-							<picture>
-								<source srcset="images/01P.jpg" media="(orientation:portrait)" alt="portrait"/>
-								<source srcset="images/01L.jpg" media="(orientation:landscape)" alt="landscape"/>
-								<img src="./logo"/>
-							</picture>
-						</li>
-						<li>
-							<picture>
-								<source srcset="images/02P.jpg" media="(orientation:portrait)" alt="portrait"/>
-								<source srcset="images/02L.jpg" media="(orientation:landscape)" alt="landscape"/>
-								<img src="./logo"/>
-							</picture>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<div>
-						<p>02</p>
-					</div>
-					<picture>
+		<main class="projects">
+			<article class="project"></article>
+
+			<article class="project">
+				<div class="project-info">
+					<p class="project-counter">01</p>
+				</div>
+				<div class="project-images">
+					<picture class="project-image">
+						<source srcset="images/01P.jpg" media="(orientation:portrait)" alt="portrait"/>
+						<source srcset="images/01L.jpg" media="(orientation:landscape)" alt="landscape"/>
+						<img src="./logo"/>
+					</picture>
+					<picture class="project-image">
 						<source srcset="images/02P.jpg" media="(orientation:portrait)" alt="portrait"/>
 						<source srcset="images/02L.jpg" media="(orientation:landscape)" alt="landscape"/>
 						<img src="./logo"/>
 					</picture>
-				</li>
-			</ul>
+				</div>
+			</article>
+
+			<article class="project">
+				<div class="project-info">
+					<p class="project-counter">02</p>
+				</div>
+				<div class="project-images">
+					<picture class="project-image">
+						<source srcset="images/01P.jpg" media="(orientation:portrait)" alt="portrait"/>
+						<source srcset="images/01L.jpg" media="(orientation:landscape)" alt="landscape"/>
+						<img src="./logo"/>
+					</picture>
+					<picture class="project-image">
+						<source srcset="images/02P.jpg" media="(orientation:portrait)" alt="portrait"/>
+						<source srcset="images/02L.jpg" media="(orientation:landscape)" alt="landscape"/>
+						<img src="./logo"/>
+					</picture>
+				</div>
+			</article>
 		</main>
 	</body>
 </html>
